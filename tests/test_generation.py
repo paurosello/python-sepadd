@@ -29,6 +29,13 @@ SAMPLE_RESULT = b"""
       <CtrlSum>60.12</CtrlSum>
       <InitgPty>
         <Nm>TestCreditor</Nm>
+        <Id>
+             <OrgId>
+                 <Othr>
+                      <Id>000000</Id>
+                </Othr>
+            </OrgId>
+        </Id>
       </InitgPty>
     </GrpHdr>
     <PmtInf>
