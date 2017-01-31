@@ -5,7 +5,7 @@ from lxml import etree
 
 
 def validate_xml(xmlout):
-    with open(os.path.join(os.path.dirname("/Users/pau/workplace/python-sepadd/tests/"), 'pain.008.001.02.xsd'), 'rb') as schema_file:
+    with open(os.path.join(os.path.dirname(__file__), 'pain.008.001.02.xsd'), 'rb') as schema_file:
         schema_xml = schema_file.read()
     schema_root = etree.XML(schema_xml)
     schema = etree.XMLSchema(schema_root)
