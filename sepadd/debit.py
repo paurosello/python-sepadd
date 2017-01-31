@@ -200,13 +200,28 @@ class SepaDD(object):
         InitgPty_node = ET.Element("InitgPty")
         Nm_node = ET.Element("Nm")
 
+        Id_node = ET.Element("Id")
+        OrgId_node = ET.Element("OrgId")
+        Othr_node = ET.Element("Othr")
+        Id2_node = ET.Element("Id")
+
         # Add data to some header nodes.
         MsgId_node.text = make_msg_id()
         CreDtTm_node.text = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
         Nm_node.text = self._config['name']
-
+        #ID value
+        Id2_node.text = self._config['creditor_id']
+        
         # Append the nodes
         InitgPty_node.append(Nm_node)
+    
+        #Append ID
+        Othr_node.append(Id2_node)
+        OrgId_node.append(Othr_node)
+        Id_node.append(OrgId_node)
+        InitgPty_node.append(Id_node)
+        #End Custom
+
         GrpHdr_node.append(MsgId_node)
         GrpHdr_node.append(CreDtTm_node)
         GrpHdr_node.append(NbOfTxs_node)
