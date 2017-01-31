@@ -30,11 +30,11 @@ SAMPLE_RESULT = b"""
       <InitgPty>
         <Nm>TestCreditor</Nm>
         <Id>
-             <OrgId>
-                 <Othr>
-                      <Id>000000</Id>
-                </Othr>
-            </OrgId>
+          <OrgId>
+            <Othr>
+              <Id>000000</Id>
+            </Othr>
+          </OrgId>
         </Id>
       </InitgPty>
     </GrpHdr>
