@@ -1,8 +1,8 @@
 sepadd -- SEPA Direct Debit XML
 ===============================
 
-.. image:: https://travis-ci.org/raphaelm/python-sepadd.svg?branch=master
-   :target: https://travis-ci.org/raphaelm/python-sepadd
+.. image:: https://travis-ci.org/paurosello/python-sepadd.svg?branch=master
+    :target: https://travis-ci.org/paurosello/python-sepadd
 
 This is a python implementation to generate SEPA direct debit XML files.
 
